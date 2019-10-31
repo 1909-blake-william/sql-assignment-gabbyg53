@@ -97,11 +97,17 @@ where firstName = 'Robert' and LastName = 'Walter';
 SELECT CURRENT_TIMESTAMP FROM dual;
 
 --Task – create a function that returns the length of a mediatype from the mediatype table
-
+SELECT LENGTH(name) from mediatype;
 
 --3.2 System Defined Aggregate Functions
 --Task – Create a function that returns the average total of all invoices
+Select AVG(total) from invoice;
+
 --Task – Create a function that returns the most expensive track
+SELECT MAX(unitprice)
+FROM Track;
+
+
 --3.3 User Defined Scalar Functions
 --Task – Create a function that returns the average price of invoiceline items in the invoiceline table
 --3.4 User Defined Table Valued Functions
